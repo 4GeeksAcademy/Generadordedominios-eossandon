@@ -1,11 +1,12 @@
-import "bootstrap";
-import "./style.css";
+let pronoun = ['the', 'our'];
+let adj = ['great', 'big'];
+let noun = ['jogger', 'racoon'];
+let exten = ['.com', '.net', '.us', '.io']
 
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+for (const dominio1 of pronoun) {
+  for (const dominio2 of adj) {
+    for (const dominio3 of noun) {
+      console.log(dominio1 + dominio2 + dominio3 + exten[(Math.floor(Math.random() * 3))]);
+    }
+  }
+}
